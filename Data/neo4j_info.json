@@ -1,0 +1,5 @@
+{
+    "url":"bolt://140.115.54.90:10096",
+    "account": "neo4j",
+    "password": "wmlab"
+}

@@ -1,0 +1,333 @@
+﻿Text,label
+MoonBounce is notable for being the third publicly revealed case of an implant from the latter class of firmware-based rootkits.,1
+"The source of the infection starts with a set of hooks that intercept the execution of several functions in the EFI Boot Services Table, namely AllocatePool, CreateEventEx and ExitBootServices. ",1
+"Those hooks are used to divert the flow of these functions to malicious shellcode that is appended by the attackers to the CORE_DXE image, which in turn sets up",1
+"This driver, which runs during the initial phases of the kernel’s execution, is in charge of deploying user-mode malware by injecting it into an svchost.exe process, once the operating system is up and running.",1
+"Finally, the user mode malware reaches out to a hardcoded C&C URL (i.e. hxxp://mb.glbaitech[.]com/mboard.dll) and attempts to fetch another stage of the payload to run in memory, which we were not able to retrieve.",1
+"The commands retrieved from the server are also encrypted with AES-128, with the key stored in the command’s file itself. ",1
+"They are known to target senior business executives by uploading malicious code to their computers through infiltrated hotel WiFi networks, as well as through spear-phishing and P2P attacks.",1
+The first stage of this attack is a multi-layered malicious document which defines an AltChunk element to load an embedded DOCX file. ,1
+The embedded DOCX file defines another AltChunk element which loads an embedded malicious RTF file. ,1
+"When the RTF file is loaded, the three OLE objects are dropped in the %temp% directory with the names “p”, “b” and “googleofficechk.sct”. ",1
+It sends a POST request to the URL “http://signing-config[.]com/cta/key.php” with DATA “L=G641giQQOWUiXE&q={Base64 encoded list of running processes}”,1
+Copies the executable from “%temp%\p” to “%LOCALAPPDATA%\PeerDistRepub\qq3104.exe”,1
+"The domain, deepersbot[.]network was registered by the threat actor to spoof the legitimate domain, deeper[.]network.",1
+The iOS exploit chain used a framework based on Ironsquirrel to encrypt exploits delivered to the victim's browser.,1
+"After gaining root, the downloaded payload is loaded and run in the background on the victim's machine via launchtl.",1
+" For example, the payload we obtained contained a kernel module for capturing keystrokes. ",1
+Notable features for this backdoor include: victim device fingerprinting screen capture file download/upload executing terminal commands audio recording keylogging,1
+"Since early September 2021, Proofpoint researchers are tracking renewed malware campaigns by the financially driven TA505.",0
+"The early campaigns identified by Proofpoint in September 2021 were low volume compared to typical TA505 activity, with only several thousand messages per wave. ",0
+TA505 used more specific lures that did not affect as many industries as the more recent October 2021 campaigns.,0
+"These early campaigns also largely focused on targets in North America, such as United States and Canada.",0
+"In late September and throughout October 2021, Proofpoint observed a shift to familiar TA505 tactics, techniques, and procedures (TTPs) that are reminiscent of the actor’s 2019 and 2020 campaigns.",0
+"Microsoft continues to work with partners and customers to track and expand our knowledge of the threat actor we refer to as NOBELIUM, the actor behind the SUNBURST backdoor, TEARDROP malware, and related components.",0
+"As we stated before, we suspect that NOBELIUM can draw from significant operational resources often showcased in their campaigns, including custom-built malware and tools. ",0
+ It can also receive additional malicious components from a command-and-control (C2) server and execute them on the compromised server.,1
+"After compromising an AD FS server, NOBELIUM was observed dropping the following two files on the system (administrative privileges are required to write these files to the  folders listed below)",1
+"FoggyWeb is stored in the encrypted file Windows.Data.TimeZones.zh-PH.pri, while the malicious file version.dll can be described as its loader. ",1
+"Before returning the output of the C2 commands (that is, the token-signing certificate, the token encryption certificate, or the AD FS service configuration data) to the C2 in an HTTP 200 response, the backdoor first obfuscates the output by calling its method named GetWebpImage().",1
+"If the decoded X509Certificate value starts with “MZ,” the backdoor treats the decoded data as a .NET-based assembly/payload and proceeds to call its Service.ExecuteBinary() method to load and execute the DLL payload in memory.",1
+"As the name suggests, the Service.GetCertificate() method is responsible for retrieving an AD FS certificate (either the token- signing or the token encryption certificate, depending on the value of the certificateType parameter passed to the method) from the AD FS service configuration database.",1
+A variant of the technique described in this Appendix was publicly presented by Douglas Bienstock and Austin Baker at the TROOPERS conference in 2019 ,0
+Azure Sentinel customers can use the following detection queries to look for this activity:,0
+"To locate related activity, run the following advanced hunting queries in Microsoft 365 Defender:",0
+ndpoint detection and response (EDR) capabilities in Microsoft Defender for Endpoint detect malicious behavior related to this malware which is surfaced as alerts with the following titles:,0
+This report examines the unspoken connections between the Russian Federation (in the form of Russian intelligence services or the Kremlin) and cybercriminals in Russia and Eastern Europe. ,0
+"Sources include the Recorded Future® Platform as well as other dark web and open sources. The report will be of interest to threat researchers, as well as law enforcement, government, and defense organizations.",0
+"​The intersection of individuals in the Russian cybercriminal world and officials in the Russian government, typically from the domestic law enforcement or intelligence services, is well established yet highly diffuse.",0
+"Recorded Future identified 3 types of links between the Russian intelligence services and the Russian criminal underground based on historical activity and associations, as well as recent ransomware attacks: direct links, indirect affiliations, and tacit agreement.      ",0
+"Even in cases with discernible, direct links between cybercriminal threat actors and the Russian state, indirect affiliations suggest collaboration, and a lack of meaningful punitive actions shows either a tolerance for, or tacit approval of, these efforts. ",0
+"Precedent suggests that such activities and associations will almost certainly continue for the foreseeable future; however, these associations will likely adapt to provide greater plausible deniability and fewer overt, direct links between both groups. ",0
+"The open assertion made by US President Joe Biden that Russian cybercriminals are protected by the Russian government has placed Russian President Vladimir Putin on the defensive, forcing Russian domestic law enforcement to demonstrate that they are cracking down on ransomware operators. ",0
+"The emergence of ShadowPad, a privately sold, well-developed and functional backdoor, offers threat actors a good opportunity to move away from self-developed backdoors.",0
+"While it is well-designed and highly likely to be produced by an experienced malware developer, both its functionalities and its anti-forensics capabilities are under active development.",0
+"The malware extracts configuration information about the machine that it infects using the systeminfo command, and then it retrieves the list of processes by spawning a tasklist process. ",1
+We have used rundll32.exe to run the DLL by calling the RunMod function:,1
+The list of processes is retrieved by creating a new process that runs the tasklist command:,1
+"The list of files and directories extracted before is concatenated with the above string, as shown in figure 19:",1
+"The process decrypts some important strings using the XOR algorithm, the keys being “CEJ&V%$84k839y92m” and “qpzoamxiendufbtbf3-#$*40fvnpwOPDwdkvn”. ",1
+The malware adds one HTTP request header (“application/x-www-form-urlencoded”) to the HTTP request handle:,1
+"In the case of failing to connect to the C2 server on port 443, the process tries to connect on port 80:",1
+The information extracted before is exfiltrated to the C2 server (id=<hostname>#Username#<Serial number in decimal>&current=1&total=1&data=<base-64 encoded data computed above>):,1
+The DLL file is loaded into the address space of the current process using the LoadLibraryW routine:,1
+A couple of other tools that have significant code overlaps with Moriya were found as well.,0
+We provided information about this operation in our threat intelligence portal in August 2020.,0
+More details and analysis are available to customers of our private APT reporting service. For more details contact: intelreports@kaspersky.com.,0
+"Unfortunately, we are not able to attribute the attack to any particular known actor, but based on the TTPs used throughout the campaign, ",0
+"We base this on the fact that the targeted entities were attacked in the past by Chinese-speaking actors, and are generally located in countries that are usually targeted by such an actor profile. ",0
+Based on our telemetry the attacks were highly targeted and delivered to less than 10 victims around the world.,0
+"The corresponding CreateFileW hook function checks if the filename argument contains the directory ‘\MORIYA\’ or ‘\moriya\’ in its path, and if so, infers that the attacker has sent a specially crafted HTTP request to the web server. In this request, the Moriya path in the URL is followed by an encoded command. ",1
+"The malware, which comes as a DLL, achieves its goals by enumerating running IIS processes on the server (i.e., those that are executed from the image w3wp.exe), and injecting the malware’s DLL into them to alter their behavior. ",1
+"The corresponding CreateFileW hook function checks if the filename argument contains the directory ‘\MORIYA\’ or ‘\moriya\’ in its path, and if so, infers that the attacker has sent a specially crafted HTTP request to the web server. ",1
+"After executing the command via cmd.exe, the output will be written to the file in this path, allowing the attacker to read it by issuing a corresponding HTTP request where the URL path leads to this file on the server.",1
+"Apart from this, IISSpy will also create a monitoring thread that will periodically look for newly created httpd.exe processes, corresponding to the Apache server. If detected, the malware will be injected to them as well.",1
+An example of such a string used in identical code in the two variants is shown below.,0
+"This indicates the group conducting these attacks may well still be active and retooling for additional operations in the area of interest outlined in this publication, as well as other regions. ",0
+"According to Lab Dookhtegan, which you migth remeber him/their from HERE, HERE and HERE, Binder is a project related to IRGC cyber espionage group build for trojenize google apps (APK).",0
+"The application “trojenization” is a well-known process which takes as input a good APK and a code to inject (a RAT, for example).",1
+Source code analysis is insanely helpful to map how attackers are evolving. ,0
+"In July 2020, Mandiant Threat Intelligence released a public report detailing an ongoing influence campaign we named “Ghostwriter.",0
+" Ghostwriter is a cyber-enabled influence campaign which primarily targets audiences in Lithuania, Latvia and Poland and promotes narratives critical of the North Atlantic Treaty Organization’s (NATO) presence in Eastern Europe.",0
+"Since releasing our public report, we have continued to investigate and report on Ghostwriter activity to Mandiant Intelligence customers.",0
+We tracked new incidents as they happened and identified activity extending back years before we formally identified the campaign in 2020.,0
+"A new report by our Information Operations analysis, Cyber Espionage analysis, and Mandiant Research teams provides an update on Ghostwriter, highlighting two significant developments.",0
+Chinese state-backed advanced persistent threat (APT) group Antlion has been targeting financial institutions in Taiwan in a persistent campaign over the course of at least 18 months.,0
+"The backdoor allowed the attackers to run WMI commands remotely, while there is also evidence that they leveraged EternalBlue exploits in the backdoor.",1
+"The attackers appeared to have the ability to interact with SMB shares, and it's possible that they used mounted shares over SMB to transfer files from attacker-controlled infrastructure. ",1
+"There is also evidence that the attackers were able to browse the web through the backdoor, likely using it as a proxy to mask their IP address.",1
+"As well as the attack on the financial institution outlined in the case study below,",0
+"Antlion compromised the networks of at least two other organizations in Taiwan, including another financial organization and a manufacturing company.",0
+"The attackers also spent a significant amount of time on both these targeted networks, spending close to 250 days on the financial organization and around 175 days on the manufacturing organization.",0
+"The attackers also used a variety of off-the-shelf tools, as well as leveraging living-off-the-land tools such as PowerShell, WMIC, ProcDump, LSASS, and PsExec.",1
+The attackers were also observed leveraging exploits such as CVE-2019-1458 for privilege escalation and remote scheduled tasks to execute their backdoor. CVE-2019-1458 is an elevation-of-privilege vulnerability that occurs in Windows when the Win32k component fails to properly handle objects in memory.,1
+"The first suspicious activity on this victim network occurred in December 2020 when WMIC was used to execute two commands: wmic process get CSName,Description,ExecutablePath,ProcessId /format:”;CSIDL_SYSTEM\wbem\zh-tw\htable.xsl”; wmic os get name,version,InstallDate,LastBootUpTime,LocalDateTime,Manufacturer,RegisteredUser,ServicePackMajorVersion,SystemDirectory /format:”;CSIDL_SYSTEM\wbem\zh-tw\htable.xsl”;",1
+"The first command was used to list the computer name, description of processes, executable path, and process ID.",1
+"For the latest protection updates, please visit the Symantec Protection Bulletin.",0
+We encourage you to share your thoughts on your favorite social platform. Twitter LinkedIn,0
+This blog was authored by Ankur Saini and Hossein Jazi,0
+Lazarus Group is one of the most sophisticated North Korean APTs that has been active since 2009.,0
+The group is responsible for many high profile attacks in the past and has gained worldwide attention. ,0
+The Malwarebytes Threat Intelligence team is actively monitoring its activities and was able to spot a new campaign on Jan 18th 2022.,0
+"In this campaign, Lazarus conducted spear phishing attacks weaponized with malicious documents that use their known job opportunities theme.",1
+We identified two decoy documents masquerading as American global security and aerospace giant Lockheed Martin.,1
+"In this blog post, we provide technical analysis of this latest attack including a clever use of Windows Update to execute the malicious payload and GitHub as a command and control server. ",1
+The two macro-embedded documents seem to be luring the targets about new job opportunities at Lockheed Martin: Lockheed_Martin_JobOpportunities.docx Salary_Lockheed_Martin_job_opportunities_confidential.doc,1
+The below image shows the full attack process which we will discuss in detail in this article. ,0
+The malware performs a series of injections and achieves startup persistence in the target system.,1
+The above code uses a very unusual and lesser known technique to hijack the control flow and execute malicious code.,1
+"The malware retrieves the address of the “WMIsAvailableOffline” function from “wmvcore.dll”, then it changes the memory protection permissions for code in “WMIsAvailableOffline” and proceeds to overwrite the code in memory with the malicious base64 decoded shell-code.",1
+The shellcode loaded by the macro contains an encrypted DLL which is decrypted at runtime and then manually mapped into memory by the shellcode. ,1
+The shellcode uses some kind of custom hashing method to resolve the APIs.,1
+The injection function is responsible for resolving all the required API calls. ,1
+Lazarus APT is one of the advanced APT groups that is known to target the defense industry. ,0
+In this blog post we provided a detailed analysis about the new campaign operated by this actor. ,0
+Cisco Talos has observed a new campaign targeting Turkish private organizations alongside governmental institutions.,0
+Talos attributes this campaign with high confidence to MuddyWater — an APT group recently attributed to Iran's Ministry of Intelligence and Security (MOIS) by the U.S. Cyber Command.,0
+"This campaign utilizes malicious PDFs, XLS files and Windows executables to deploy malicious PowerShell-based downloaders acting as initial footholds into the target's enterprise. MuddyWater's use of script based components such as obfuscated PowerShell based downloaders is also a tactic described in the advisory from January 2021 by the U.S. Cyber Command.",1
+"MuddyWater has conducted various campaigns against entities spread throughout the U.S.A, Europe, Middle East and South Asia.",0
+" This threat actor, active since at least 2017, frequently conducts campaigns against high-value targets in American, European and Asian countries. Campaigns carried out by the threat actor aim to achieve either of three outcomes:",1
+"Espionage - Supporting the political dominance of the nation state in the Middle East. This is business as usual for the threat actor, motivated by nation-state interests.",0
+Talos identified a set of malicious Microsoft Excel spreadsheet files distributed with Turkish language names. Some of these files were named to masquerade as legitimate documents from the Turkish Health and Interior Ministries.,1
+"The infection chain instrumented by the VBA macros consist of creating three key artifacts on the infected endpoint: Registry key for persistence. Malicious VB script intermediate component that the macro sets up for persistence. Malicious PowerShell-based downloader script: The actual post-infection, payload instrumentor used for executing arbitrary code on the infected endpoint.",1
+The VB script's persistence is set up by creating a malicious Registry Run for the infected user: HKCU\Software\Microsoft\windows\CurrentVersion\Run | <random>,1
+ The latest versions of the VBA code deployed could make HTTP requests to a canary token from canarytokens.com.,1
+"Once executed, the sample drops a text file in the victim's temporary folder. ",1
+"Downloading and executing malicious PowerShell scripts served to it by a remote location. Here, we see that the intermediate VBS scripts used in the maldoc based infection chain have been replaced with a PowerShell-based implementation.",1
+The instrumentor script is responsible for base64 decoding the contents of the downloader (the second PS1 script) and executing it on the endpoint.,1
+"Check Point Research discovered evidence of a new campaign by the Iranian threat group APT34 (aka OilRig), against what appears to be a Lebanese target, employing a new backdoor variant we dubbed SideTwist.",0
+"Since the 2019 leak of APT34’s tools by an entity named “Lab Dookhtegan”, the threat group has been actively retooling and updating their payload arsenal to try and avoid detection, creating several different malware variants whose ultimate purpose remained the same: to gain the initial foothold on the targeted device.",1
+"The decoy document clearly tries to appear like a benign document, offering various positions in the Ntiva IT consulting company – a company based in Virginia, US.",1
+"Macros used by APT34’s job opportunity campaigns have evolved through the years, but also managed to keep their own distinctive style and purpose: Verification that there is a mouse connected to the PC (Anti-Sandboxing technique). Initial fingerprinting of the target device and sending of the information to the C2 server. Dropping embedded executable to disk with a “doc” extension (later to be renamed to “.exe”). Registering a Windows schedule task that would launch the executable every X minutes.",1
+"APT34 is notorious for its heavy use of DNS tunneling through many of their different tools, and this time this feature also made its way into the initial macros stage.",1
+The backdoor’s communication with the C&C server (sarmsoftware[.]com) is HTTP based on port 443 with port 80 as fallback.,1
+"Iran backed APT34 shows no sign of slowing down, further pushing its political agenda in the middle-east, with an ongoing focus on Lebanon – using offensive cyber operations.",0
+"Check Point Sandblast protects against this APT attack, and prevents it from the very first steps.  ",0
+1994-2022 Check Point Software Technologies LTD. All rights reserved. Property of CheckPoint.com | Privacy Policy,0
+"As the COVID-19 pandemic spread across the globe in 2020, organizations made significant changes to their work routines across virtually every industry. ",0
+One major shift was the move to remote working arrangements which coincided with increased reliance on new interactive communications platforms like Discord and Slack. ,0
+"While both of these platforms have existed for some time, recent changes to employee workflows have led to an increased reliance upon them for conducting business. ",0
+"Since these files are uploaded and linked via a URL, there are a lot of different ways they can get these links in front of users.",1
+"When files are uploaded and stored within the Discord CDN, they can be accessed using the hardcoded CDN URL by any system, regardless of whether Discord has been installed, simply by browsing to the CDN URL where the content is hosted.",1
+This macro deobfuscates and executes PowerShell that is responsible for retrieving the next stage payload.,1
+Malware samples that abuse Discord typically rely on the webhook functionality of the Discord API for C2 communications. ,1
+Ways our customers can detect and block this threat are listed below.,0
+A list of the domains associated with these malware campaigns can be found here.,0
+"In a certain month of 2013, during an in-depth forensic investigation of a host in a key domestic department, researchers from the Pangu Lab extracted a set of advanced backdoors on the Linux platform, which used advanced covert channel behavior based on TCP SYN packets, code obfuscation, system hiding, and self-destruction design.",1
+"Judging from some behavioral functions, this is a top-tier APT backdoor, but further investigation requires the attacker's asymmetric encrypted private key to activate the remote control function.",1
+"The VHD file includes two files, a PDF document and an executable that is masquerading as a Microsoft Word document.",1
+"The sample has been obfuscated with gobfuscator, the same tool used by the Blackrota malware.",1
+"Rather, the malware author has included the screenshot code from the library directly in the main codebase.",1
+The screenshot is uploaded to the C&C located at the URL: hxxps://support-cloud[.]life/managment/cb-secure/technology.php. If,1
+The lures consisted of documents about Sinopharm International Corporation—a pharmaceutical company that COVID-19 vaccine is currently going through phase three clinical trials—and an impersonated evacuation letter from Directorate General of Civil Aviation.,1
+"Since mid-2021, we have been investigating a rather elusive threat actor called Earth Lusca that targets organizations globally via a campaign that uses traditional social engineering techniques such as spear phishing and watering holes. ",1
+"The first cluster is built using virtual private servers (VPS), rented from a service provider, that are used for the group’s watering hole and spear phishing operations, in addition to acting as a command-and-control (C&C) server for malware.",1
+this second cluster performs a different role in an Earth Lusca attack — it acts as a scanning tool that searches for vulnerabilities in public-facing servers and builds traffic tunnels within the target’s network. ,1
+More information about these attacks and the actor behind them is available to customers of the Kaspersky Intelligence Reporting service. Contact: intelreports@kaspersky.com.,0
+Kaspersky would like to thank Microsoft for their prompt analysis of the report and patches.,0
+Kaspersky products detected these attacks with the help of the Behavioral Detection Engine and the Exploit Prevention component.,0
+We provide more info about these variants and campaigns in our private report.,0
+The malware enumerates the values under the “Software\Microsoft\Windows\CurrentVersion\Internet Settings\ProxyServer” registry key and uses them to request tunneling through a proxy server in case it fails to connect to the C2 directly.,1
+The malware itself is not very sophisticated and has functionality similar to many other remote shells. ,1
+"On January 10, 2017, a court order was declassified by the Italian police, in regards to a chain of cyberattacks directed at top Italian government members and institutions.",0
+"The attacks leveraged a malware named “EyePyramid” to target a dozen politicians, bankers, prominent freemasons and law enforcement personalities in Italy.",0
+Symantec and Norton products have been protecting against Longhorn malware for a number of years with the following detections:,0
+"Longhorn has infected 40 targets in at least 16 countries across the Middle East, Europe, Asia, and Africa. ",0
+The malware configuration contains one Command and Control: pactchfilepacks[.]net23[.]net,1
+The .scr files drops two files: an executable and a library.,1
+"The .dll file is executed by the .exe file. In this version, a shortcut is created in order to launch winnit.exe in the following path %USERPROFILE%\Start Menu\Programs\Startup\Anti virus service.lnk.",1
+"The purpose is to be executed only once and steal data on the infected system, here are the main features: Keyloggers Clipboard stealer Firefox profiles and cookies stealer Chrome profiles and cookies stealer Opera profiles and cookies stealer",1
+The developer used the Microsoft Winsocks API to handle the network connection.,1
+"IBM X-Force discovered that Dridex, one of the most nefarious banking Trojans active in the financial cybercrime arena, recently underwent a major version upgrade that is already active in online banking attacks in Europe.",0
+"Dridex’s code is based on that of the Bugat Trojan, which was first discovered in early 2010.",0
+"To do that, it uses Windows asynchronous procedure calls (APC) by calling the NtQueueAPCThread API.",1
+There’s a reason here for using the native API instead of opting for kernel32!QueueUserAPC. It allows three parameters to be passed to the APC routine being called instead of just one parameter allowed by kernel32!QueueUserAPC.,1
+"Instead, it uses the same GlobalGetAtomW method to patch GlobalGetAtomA, hooking it to execute the payload.",1
+"Only before a shutdown of the operating system, Dridex’s dynamic link library (DLL) would get written to disk, and a registry value (HKCU\Software\Microsoft\Windows\CurrentVersion\Run) was created to execute the malicious DLL upon reboot.",1
+"According to Windows file path priority, the malicious DLL gets loaded instead of the original one, which is located in system32. ",1
+VXRL(credit) contacted us regarding an APT phishing email that included a download link to a malware being hosted on a Geocities website.,1
+"Once again its a VBScript , this script creates a web client object and uses the proxy setting and user rights to download a file from a url and execute the file.",1
+"Once again its a base 64 encoded code, and it shows that it used the IEX command to decode.",1
+"Since 1999, our DDoS protection and network visibility solutions have been tested and proven in the world's largest, most complex networks. ",0
+"We deliver powerful visibility and traffic intelligence, at internet scale, to help customers not only understand their own environment, but threat actors, their tools, behaviors and campaigns on a global basis.",0
+Written by Sergei Shevchenko and Adrian Nish,0
+"This DLL loads, decrypts and injects the 'CHM' file into the system lsass.exe process.",1
+The output of the genExp_00000001() function is JavaScript that has the following format – this script will be executed inside the client's browser:,1
+The following scheme illustrates the steps outlined above:,0
+" Since the release of our report, more samples have come to light, most notably those described in the Polish language niebezpiecznik.pl blog on 7 February 2017.",0
+"Of the hashes provided, only three samples could be found in public malware repositories. All three had been submitted from Poland in recent weeks.",0
+"During our investigation, we observed two variations of the obfuscated JavaScript that were delivered as zip attachments to the recipients.",1
+"Sample Hashes – 5fcaf61df7fb44c984e5c5dcb9d2022a, a3ffac9e74fa99291d4d53ef525ed0fd",0
+The above JavaScript creates a Windows script host object to establish connection with the hard-coded url (astralopitec[.]yomu[.]ru) in object named “dingy”. The fetched malware payload is then stored in the %TEMP% directory.,1
+Detect and remediate all threats at rest in sanctioned cloud services using a threat-aware Cloud Access Security Broker like Netskope.,0
+"Our anaysis is based on multiple sources, most of which come from foreign companies, as getting the information from Polish sources was a really hard task.",0
+ We would like to use this opportunity to thank all of our sources who were so kind to share their research results with us. We hope this publication will help to further the research into this incident.,0
+"In an interesting plot twist the malware resolves those domains to their real IP addresses, but then performs a XOR operation on the original IPs to obtain true C&C IP addresses.",1
+Data from PassiveTotal does confirm the finding related to external resources included in knf.gov.pl website since 2016-10-07 till yesterday.,0
+"While we have no idea of attackers motivation, so far we have no knowledge of any direct financial losses incurred by banks or their customers due to this attack. ",0
+"Guys, Polish, not polish. And updates from the Polish version could also be replicated.",0
+"ESET's Anton Cherepanov analyzes the work of TeleBots, a malicious toolset that was used in focused cyberattacks against targets in Ukraine's financial sector.",0
+ We believe that the main goal of attackers using these tools is cybersabotage. This blog post outlines the details about the campaign that we discovered.,0
+As with campaigns attributed to BlackEnergy group the attackers used spearphishing emails with Microsoft Excel documents attached that contain malicious macros as an initial infection vector. ,1
+In January 2016 we published our analysis of a spearphishing attack against energy companies in Ukraine.,0
+The Python/TeleBot malware uses exactly the same approach; the Python backdoor code is obfuscated and packed into a standalone executable using PyInstaller. ,1
+"In addition, the Python code is ROT13 encoded, AES encrypted, compressed using zlib library and then Base64 encoded.",1
+"The Telegram Bot API is based on HTTP and to a network administrator within a compromised network, the communication between the infected computer and the attackers will look like HTTP(S) communication with a legitimate server, specifically api.telegram.org.",1
+Captures screenshot (not implemented),1
+"This tool collects saved passwords from various browsers such as Google Chrome, Internet Explorer, Mozilla Firefox, and Opera.",1
+The attackers are using a tool with name plainpwd in order to dump Windows credentials from memory. This tool is a slightly modified version of the open-source project mimikatz.,1
+"In addition to plainpwd and CredRaptor the toolkit includes a keylogger. The keylogger uses a standard technique to capture keystrokes, specifically the SetWindowsHookEx function.",1
+Another interesting discovery was a tool that was used during attacks to make queries to Active Directory using LDAP. ,1
+"This tool is able to dump detailed information about computers and usernames listed in Active Directory, and is tailored for a specific victim’s domain.",1
+So attackers specify an external C&C server in the command line and the tool connects to this server using HTTP.,1
+Previous versions of this component were used in attacks against media companies in November 2015 and against power grid companies in Ukraine in December 2015.,0
+"There are improvements in the code, however the main idea of KillDisk hasn’t change so much – it deletes important system files and makes computer unbootable. ",1
+Our Smart Protection Network data shows the following countries have FastPOS-related infections in the last five months.,0
+"As of posting, there’s a total of 3,354 credit card numbers for purchase with the following prices:",0
+The site also provides information regarding the current locations these cybercriminals are looting.,0
+"Based on our research findings, here’s a rough timeline of the events related to this.",0
+"Our research also indicated that around January 24-25 of this year, there were advertisements of a site called SwipeIt[.]pw in some forums with this content.",0
+"Aside from implementing HTTP GET (instead of HTTP POST) on the client-side, the command and control server does not implement HTTPS to encrypt the traffic.",1
+"In the first thread, FastPOS captures keystrokes and sends back the entire string to the C&C server once the return key is pressed.",1
+Keyloggers often go together with PoS threats as the former enable the attackers to do reconnaissance and obtain other information aside from the stolen data from the credit card scrape.,1
+"This pop-up box forces the users to manually circumvent the user account control (UAC), built on Windows Vista® and higher. A",1
+The “Installation Complete” pop-up box may be seen as a simple effort to avoid automation or sandbox execution that could possibly thwart full infection.,1
+"Regardless of size and industry, an organization or a company can be affected by Point-of-Sale (PoS) threats",0
+"For more than three years, we have monitored and reported PoS threats targeting diverse verticals beyond retail; we have seen attacks affecting airports and parking lots, among others.",0
+"While there are not that many IP victims logged on this particular C&C, a look-up on ipintel.io showed a concentration of victims from Germany and Austria:",0
+It then proceeds to decrypt an embedded DLL from its body and inject it into explorer.exe:,1
+The injected DLL then attempts to download a file from the link hxxp://remembermetoday4.asia/00/b.bin:,1
+It then searches for instance of a running explorer.exe process where it then injects the downloaded file using CreateRemoteThread API:,1
+"Are German-Speaking Users ""Aleksandr’s"" Only Target?",0
+"Historical information shows that the individual or group using the name “Aleksandr” have been involved in bank information theft not only of German-speaking users, but have also targeted Australian users.",0
+"We are unable to confirm the legitimacy of “Aleksandr’s” registrant details, or if he (or they) is working with a group. ",0
+"Earlier, we showed that the geolocations of DELoader victims were concentrated in Germany and Austria. You might have also noticed that one of the IPs deviated from that area – it resolved to Kiev,Ukraine:",0
+This is odd since German is not a common language in Ukraine.,0
+"By Floser Bacurio and Roland Dela Paz | June 21, 2016",0
+This report is a follow-up on our DustySky operation report from January 20161,0
+"It analyses new attacks by Molerats against targets in Israel, The United States, Egypt, Saudi Arabia, United Arab Emirates and The Palestinian Authority",0
+A wave of malicious email messages has been sent on a weekly basis to hundreds of targets. T,1
+In January 2016 we've published an extensive report about the campaign and malware - “Operation DustySky” - which is available here: clearskysec.com/dustysky,0
+The shortened link statistics page enables us to learn about the scope and the targeting of this threat actor.,0
+The samples were Word documents with a macro version of DustySky.,1
+The images below display this username in the samples metadata:,0
+"Our communities are designed by division, which you can see below. ",0
+"Visit each division homepage for a list of product communities under each. From there, click on the communities you're interested in and then choose ""Join Community"" and choose your notification settings. It's that simple. Join as many as you'd like. ",0
+The use of the third level domains is typical for “domain shadowing.”  This involves adding malicious subdomains on legitimate second level domains after gaining access to DNS records.,1
+Two teams of Iran-based attackers have been using back door threats to conduct targeted surveillance of domestic and international targets. ,0
+Data from Cadelle’s C&C servers shows that a large number of Backdoor.Cadelspy infections affected individual users of Iranian internet service providers (ISPs) and hosting services.,0
+"Cadelspy’s main payload contains its back door functionality, allowing the threat to carry out the following activities: Log keystrokes and the titles of open windows Gather clipboard data and system information Steal printer information and any documents that were sent to be printed Record audio Capture screenshots and webcam photos",1
+Cadelspy compresses all of the stolen data into a .cab file and uploads it to the attacker’s C&C servers.,1
+We have also compiled an indicators-of-compromise document containing further details which can be used to help identify the threats if they are present in your environment.,0
+"Figure 4 shows an e-mail with the subject “my girlfriend’s self-view video” that contains a link to an executable hosted on nvzm.info, one of the domains associated with the Musical Chairs infrastructure.",1
+It is responsible for extracting its payload to “c:\microsoft\lib\ke\Piano.dll” and executes the “mystart” function within the DLL’s export address table (EAT) using rundll32.exe.,1
+"In 2014, researchers at Kaspersky Lab discovered and reported on three zero-days that were being used in cyberattacks in the wild.",0
+Two of these zero-day vulnerabilities are associated with an advanced threat actor we call Animal Farm.,0
+"Over the past few years, Animal Farm has targeted a wide range of global organizations. Victims include: Government organizations Military contractors Humanitarian aid organizations Private companies Journalists and media organizations Activists",0
+We include user recommendations for preventing infection and indicators of compromise for researchers to identify MsAttacker.,0
+ an email with the subject line “10th March 2015 campaign for Tibet” was sent to hundreds of individuals and organizations from the Tibetan community. ,1
+"Attached to the email was a malicious Microsoft Word file “10th March.doc” that used the exploit CVE-2012-0158, which is a vulnerability in how Microsoft Word handles RTF documents.",1
+"The notorious PlugX APT group is continuing to evolve and launch campaigns, most recently a five-month-long campaign targeting organizations in India.",0
+I have significant information about the campaign or its victims. Who do I contact?,0
+"In the coming days, we will publish more details about the Equation group malware and their attacks. ",0
+"In November 2014, the experts of the G DATA SecurityLabs published an article about ComRAT, the Agent.BTZ successor. ",0
+"We assume that the actor behind these campaigns uses several different malware strains in order to compromise the targeted infrastructure: Uroburos, a rootkit; Agent.BTZ/ComRAT, remote administration tools or Linux malware and maybe even more.",1
+"To describe the evolution of the development, we decided to compare ten major versions:",0
+Executing Commands and Uploading Victim Data,1
+"The encrypted data in the image may include instructions to execute commands via PowerShell, execute a direct command or file, or save an executable to disk and execute it.",1
+"In several cases, the commands directed HAMMERTOSS to upload information from victim networks to accounts on cloud storage services using login credentials received in",1
+"Malvertising is by now a well-known attack vector and organizations, web sites, and ad network operators have adapted their defenses to detect and defend against it. ",0
+"This zip folder contains Permit.jpg.lnk, a shortcut that opens a command prompt to download and run ca-bundle.exe from the Chinese forum site hjclub.info",1
+"When executed, ca-bundle.exe drops a self-extracting archive (AwViewWx.exe) that contains the three components of PlugX, a signed legitimate executable, a malicious DLL, and a binary file containing the main payload.",1
+"When first executed, the malware will exfiltrate data about the victim’s machine via a POST request to the ‘/bbs/[counter]/forum.php?sid=[counter]’ URL. ",1
+The compressed_data field is compressed using the common ZLIB compression algorithm. ,1
+"Get updates from Palo Alto Networks! Sign up to receive the latest news, cyber threat intelligence and research from us",0
+This post was authored by Nick Biasini with contributions by Joel Else,0
+"When the user is actually delivered a landing page, it is highly obfuscated and lacks some of the English based text we see in other exploit kits. Below is a small sample of the obfuscated landing page:",1
+"This particular ASN is associated with Webzilla, a provider out of Russia.",0
+We worked with our research partners at OpenDNS Labs to get better visibility into the domains that were hosted. ,0
+"When India gained independence from Britain in 1947, a new, predominantly Muslim nation of Pakistan was created during what was called the “partition.”",0
+"On March 2, 2014, Pakistan defeated India in a cricket match in the Asia Cup held in Dhaka, Bangladesh. The next day (March 3), in Meerut, India, 67 Kashmiri students at Swami Vivekanand Subharti University were suspended for having cheered for Pakistan and distributing sweets after their win.",0
+"In May 2017, Volexity identified and started tracking a very sophisticated and extremely widespread mass digital surveillance and attack campaign targeting several Asian nations, the ASEAN organization, and hundreds of individuals and organizations tied to media, human rights and civil society causes. ",0
+The hex code storage in $x translates to base64_decode. This code checks to see if variable-1 is set and then validates whether the MD5 of the MD5 of the value set for variable-2 matches an expected MD5 hash.,1
+The malware was distributed using several fake Facebook profiles. ,1
+"Once the malware was installed, it immediately connected to a command and control (C&C) server.",1
+"The malware communicated on the TCP port 2020, but it is also worth mentioning that there was also a C&C console running on port 443 with a familiar certificate subject common name - rsdroid.",1
+We created an image of the computer infrastructure used in the campaign:,0
+"Despite unsophisticated techniques and the level of operational security being used, the attack managed to remain undetected for several years.",0
+"For example, one sent out to a handful of countries identifies network drives when they are added to target systems, and then RC4-like-encrypts and writes certain file metadata and contents to a local path for later exfiltration. The stealer searches for files 60mb and less with these extensions:",1
+Adversaries may abuse inter-process communication (IPC) mechanisms for local code or command execution. ,1
+Adversaries may use the Windows Component Object Model (COM) for local code execution. ,1
+"Adversaries may use an existing, legitimate external Web service to exfiltrate data rather than their primary command and control channel. ",1
+Adversaries may exfiltrate data to a code repository rather than over their primary command and control channel. ,1
+Adversaries may abuse legitimate extensible development features of servers to establish persistent access to systems.,1
+Adversaries may install malicious components to extend and abuse server applications.,1
+Adversaries may use fallback or alternate communication channels if the primary channel is compromised or inaccessible in order to maintain reliable command and control and to avoid data transfer thresholds.,1
+Adversaries may modify access tokens to operate under a different user or system security context to perform actions and bypass access controls. ,1
+An adversary can use built-in Windows API functions to copy access tokens from existing processes; this is known as token stealing. ,1
+Adversaries may create a new process with a different token to escalate privileges and bypass access controls. ,1
+Adversaries may obfuscate command and control traffic to make it more difficult to detect. ,1
+Adversaries may add junk data to protocols used for command and control to make detection more difficult. ,1
+"By adding random or meaningless data to the protocols used for command and control, adversaries can prevent trivial methods for decoding, deciphering, or otherwise analyzing the traffic. Examples",1
+Adversaries may interact with the native OS application programming interface (API) to execute behaviors. ,1
+"While invoking API functions, adversaries may also attempt to bypass defensive tools (ex: unhooking monitored functions via Disable or Modify Tools).",1
+"Once established within a system or network, an adversary may use automated techniques for collecting internal data.",1
+Adversaries may collect data stored in the clipboard from users copying information within or between applications.,1
+Adversaries may attempt to position themselves between two or more networked devices using an adversary-in-the-middle (AiTM) technique to support follow-on behaviors such as Network Sniffing or Transmitted Data Manipulation.,1
+Adversaries may abuse Windows Management Instrumentation (WMI) to execute malicious commands and payloads. ,1
+"An adversary can use WMI to interact with local and remote systems and use it as a means to execute various behaviors, such as gathering information for Discovery as well as remote Execution of files as part of Lateral Movement. [3] [2]",1
+"Adversaries may search local system sources, such as file systems or local databases, to find files of interest and sensitive data prior to Exfiltration.",1
+"Specific examples include use of network layer protocols, such as the Internet Control Message Protocol (ICMP), transport layer protocols, such as the User Datagram Protocol (UDP), session layer protocols, such as Socket Secure (SOCKS), as well as redirected/tunneled protocols, such as Serial over LAN (SOL).",1
+"Adversaries may abuse BITS to download, execute, and even clean up after running malicious code. ",1
+"download and execute additional applications to the system,",1
+"It then uses the system's IPaddresses to enumerate the /24 network (x.x.x.0-255) that the system is networked with, and will attempt tospread to each of these remote systems.",1
+"Malware authors have been using the Windows Task Scheduler (or AT.exe jobs) to victimize hosts for at least a decade, but the Stuxnet worm seems to have ushered in a renaissance. ",1
+"malware will often create a task that looks for certain preconditions to launch, downloads new malicious code on a schedule, or uses scheduled tasks as a way to always remain in memory. ",1
+"The dropper copying itself to ""\system32\ntssrvr32.exe"" on theremote system; however, instead of creating a remote service, this method calls the NetScheduleJobAddfunction within the Windows netapi32 library to create a scheduled task to run the payload.",1
+"When executed, it de-obfuscates its application programming interfaces (APIs) and using port 443, attempts to connect to the hard-coded IP addresses listed below. After connecting, the malware waits for further instructions.",1
+Static analysis reveals that this RAT uses a customized XOR cryptographic algorithm displayed in Figure 1 to secure its data transfers and command-and-control (C2) sessions. ,1
+"Download and upload files Execute secondary payloads Execute shell commands Terminate running processes Delete files Search files Set file attributes Create registry entries for storing data:(HKEY_CURRENT_USER\SOFTWARE\Microsoft\WABE\DataPath) Collect device information from installed storage devices (disk free space and their type) List running processes information Capture screenshots Collect and send information about the victim's system (operating system, CPU, MAC address, computer name, language settings, list of disk devices and their type, time elapsed since the system was started, and unique identifier of the victim's system)",1
+"This report is provided ""as is"" for informational purposes only",0
+"The Department of Homeland Security (DHS) does not provide any warranties of any kind regarding any information contained within. The DHS does not endorse any commercial product or service, referenced in this bulletin or otherwise.",0
+This document is marked TLP:WHITE. Disclosure is not limited,0
+" For more information on HIDDEN COBRA activity, visit https[:]//www[.]us-cert.gov/hiddencobra.",0
+"rule r4_wiper_1 { meta: source = ""NCCIC Partner"" date = ""2017-12-12"" strings: $mbr_code = { 33 C0 8E D0 BC 00 7C FB 50 07 50 1F FC BE 5D 7C 33 C9 41 81 F9 00 ?? 74 24 B4 43 B0 00 CD 13 FE C2 80 FA 84 7C F3 B2 80 BF 65 7C 81 05 00 04 83 55 02 00 83 55 04 00 83 55 06 00 EB D5 BE 4D 7C B4 43 B0 00 CD 13 33 C9 BE 5D 7C EB C5 } $controlServiceFoundlnBoth = { 83 EC 1C 57 68 3F 00 0F 00 6A 00 6A 00 FF 15 ?? ?? ?? ?? 8B F8 85 FF 74 44 8B 44 24 24 53 56 6A 24 50 57 FF 15 ?? ?? ?? ?? 8B 1D ?? ?? ?? ?? 8B F0 85 F6 74 1C 8D 4C 24 0C 51 6A 01 56 FF 15 ?? ?? ?? ?? 68 E8 03 00 00 FF 15 ?? ?? ?? ?? 56 FF D3 57 FF D3 5E 5B 33 C0 5F 83 C4 1C C3 33 C0 5F 83 C4 1C C3 } condition: uint16(0) == 0x5a4d and uint16(uint32(0x3c)) == 0x4550 and any of them } rule r4_wiper_2 { meta: source = ""NCCIC Partner"" date = ""2017-12-12"" strings: // BIOS Extended Write $PhysicalDriveSTR = ""\\\\.\\PhysicalDrive"" wide $ExtendedWrite = { B4 43 B0 00 CD 13 } condition: u",0
+Adversaries may transfer tools or other files between systems in a compromised environment. ,1
+DustySky searches for network drives and removable media and duplicates itself onto them.,1
+"CMD can be used to copy tools to/from a remote share, this is true and very easy assuming we have the correct permissions to copy stuff onto the share",1
+"move our tools laterally using SMB Shares with the correct credentials and permissions, this can be used to replace files and wait for our victim to execute them and gain a shell on the Workstation.",1
+All of these terms are used to describe the unauthorized transfer of data from a computer or other device. ,1
+The associated HTTP response contains the id of the created account in addition to the parameters supplied in the request:,1
+Adversaries may attempt to gather information on domain trust relationships that may be used to identify lateral movement opportunities in Windows multi-domain/forest environments. ,1
+The windows utility Ntest is known to be used by adversaries to enumerate domain trusts.,1
+This search looks for the execution of nltest.exe with command-line arguments utilized to query for Domain Trust information.,1
+adversaries alike use NLTest.exe to enumerate the current domain to assist with further understanding where to pivot next.,1
+ erasing the contents of a disk entirely or partially,1
+ The first method is to gain direct access to a hard disk to overwrite arbitrarily sized disk portions with random data. ,1
+ WhiskeyAlfa is a destructive malware family that is designed to destroy the contents of any hard drive attached to an infected system. ,1
+StoneDrill is a type of wiper malware that has been used to carry out disk content wipe attacks against targets.,1
+"Once established within a system or network, an adversary may use automated techniques for collecting internal data. Methods for performing this technique could include use of a Command and Scripting Interpreter to search for and copy information fitting set criteria such as file type, location, or name at specific time intervals. This functionality could also be built into remote access tools.",1
+"Adversaries may use scripts automatically executed at boot or logon initialization to establish persistence. Initialization scripts can be used to perform administrative functions, which may often execute other programs or send information to an internal logging server.",1
+"Adversaries may use these scripts to maintain persistence on a single system. Depending on the access configuration of the logon scripts, either local credentials or an administrator account may be necessary.",1
+"Adversaries may try to get information about registered services. Commands that may obtain information about services using operating system utilities are ""sc,"" ""tasklist /svc"" using Tasklist, and ""net start"" using Net, but adversaries may also use other tools as well. ",1
+Adversaries may look for folders and drives shared on remote systems as a means of identifying sources of information to gather as a precursor for Collection and to identify potential systems of interest for Lateral Movement. ,1
