@@ -21,7 +21,7 @@ Put the CTI reports into input.txt file
  python main.py --stage MITREtreival --threshold 6 
 ```
 
-## Step3:
+### Step3:
 Get corresponding techniques(ID) in terminal
 
 
