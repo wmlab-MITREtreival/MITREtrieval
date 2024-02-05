@@ -7,7 +7,7 @@ Download the [SRL model, SBERT model, and relevant ontology vector files](https:
 Currently only support **technique threshold 6**.
 If you want other threshold, you can retrain model(Jump to [here](#retrain-model))
 Below is the command for predicting your own CTI report.
-MITREtreival will cost about **3-10 minutes** considering the length of input CTI reports
+MITREtrieval will cost about **3-10 minutes** considering the length of input CTI reports
 
 ---
 ### Step1:
