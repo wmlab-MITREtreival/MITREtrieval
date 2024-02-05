@@ -7,16 +7,7 @@ from Preprocess.Ontology_Feature.SVO_Extraction import findSVOs, nlp
 from Preprocess.Ontology_Feature.Passive2Active import pass2acti
 import re
 import copy
-
-'''from transformer_srl import dataset_readers, models, predictors
-
-predictor = predictors.SrlTransformersPredictor.from_path("srl-model-2018.05.25.tar.gz, "transformer_srl")
-predictor.predict(
-  sentence="Did Uriah honestly think he could beat the game in under three hours?"
-)'''
-
-
-predictor = Predictor.from_path("structured-prediction-srl-bert.2020.12.15.tar.gz")
+predictor = Predictor.from_path("srl-model-2018.05.25.tar.gz")
 '''
  * V_O_parser()-Get all verb object pair in sentence in sentence list
  * @sentence_list: List of sentences

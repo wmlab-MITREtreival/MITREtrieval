@@ -75,7 +75,7 @@ def group_software_parser(text):
 	greeter = Ontology(neo4j_info["url"], neo4j_info["account"], neo4j_info["password"])
 	group = greeter.query_all_group_name()
 	software=greeter.query_all_software_name()
- 
+
 	#print(software)
 	all_soft=[]
 	all_group=[]
