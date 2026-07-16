@@ -2,7 +2,7 @@
 This project aims to extract TTPs from the input CTI report. 
 ## Model Downloads
 
-Download the [SRL model, SBERT model, and relevant ontology vector files](https://drive.google.com/drive/folders/10HotHLs_h_Oy4IJbbC_Ln26UG7NJuZrm?usp=drive_link).
+Download the [SRL model, SBERT model, and relevant ontology vector files](https://drive.google.com/drive/folders/1GMIK-fjkr9awD6R1DE6hl8A9uu2e8139?usp=drive_link).
 After downloading, please ensure to place the models in the same directory as `main.py` and the other necessary files for the project. 
 This ensures the application can correctly locate and utilize the models.
 
